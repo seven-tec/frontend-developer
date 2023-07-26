@@ -173,7 +173,7 @@ const addShopping = product => {
     productPrice.innerText = product.price;
 
     const removeIcon = document.createElement('img');
-    removeIcon.setAttribute('src', '../icons/icon_close.png');
+    removeIcon.setAttribute('src', './icons/icon_close.png');
     removeIcon.setAttribute('alt', 'close');
     removeIcon.classList.add('cur-p');
     removeIcon.addEventListener('click', removeShopping);
@@ -248,7 +248,7 @@ const renderProducts = arr => {
     
         const productInfoFigure = document.createElement('figure');
         const productImgCard = document.createElement('img');
-        productImgCard.setAttribute('src', '../icons/bt_add_to_cart.svg');
+        productImgCard.setAttribute('src', './icons/bt_add_to_cart.svg');
         productImgCard.classList.add('cur-p');
         productInfoFigure.addEventListener('click', function () {
             addShopping(product);
